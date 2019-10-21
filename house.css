@@ -1,0 +1,12 @@
+
+
+ h1 {font-family: "Blimey-TRIAL-LightB";
+    font-size: 3em;
+    font-weight:200;
+    color:red;
+}
+h1:hover{
+    color:blue;
+    font-weight:200;
+  
+}
