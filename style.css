@@ -17,12 +17,12 @@ html {
   a{text-decoration: none;}
   
   header {
-    grid-column: 1 / 3;
-    background: wheat;
-    color: white;
+    grid-column:1/3;
+    
+    color:rebeccapurple;
     padding: 4rem;
     text-align: center;
- min-height: 100vh;
+
   }
   nav {
     white-space: nowrap;
@@ -35,8 +35,9 @@ html {
     padding: 0;
     color:black;
   }
-  section{height: 100vh;
-  text-align: center;}
+  section{min-height: 100vh;
+  text-align: center;
+}
   /* Only stick if you can fit */
   @media (min-height: 300px) {
     nav ul {
@@ -87,3 +88,32 @@ text-align: left;
     transition:ease-in-out 1s;
      font-weight: 800;
   }
+p{
+  padding: .5em;
+}
+.picture{
+  max-width:100%;
+
+}
+.hidden{
+transition: ease-in-out 1s;
+
+}
+.hidden:hover{
+  opacity:0;
+  content:"stoned";
+}
+.collageindex{
+ 
+  display: flex;
+  flex-wrap: nowrap;
+  }
+  #welcometext{
+
+transform: rotate(4deg);
+position: absolute;
+left:5%;
+top:5%;
+  }
+
+
