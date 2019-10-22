@@ -35,8 +35,11 @@ html {
     padding: 0;
     color:black;
   }
-  section{min-height: 100vh;
-  text-align: center;
+  section{
+  
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
 }
   /* Only stick if you can fit */
   @media (min-height: 300px) {
@@ -79,7 +82,7 @@ html {
     color:rebeccapurple;
    font-family: "Hepta Slab", serif;
     
-    font-size: 1em;
+    font-size: 2em;
     transition:ease-in-out 1s;
     font-weight: 200;
 text-align: left;
@@ -92,28 +95,64 @@ p{
   padding: .5em;
 }
 .picture{
-  max-width:100%;
 
+align-self: center;
+width: 50%;
+height: auto;
 }
 .hidden{
-transition: ease-in-out 1s;
+transition: ease-in-out .5s;
+
 
 }
 .hidden:hover{
   opacity:0;
-  content:"stoned";
+
+
+
 }
-.collageindex{
+/* .hidden:hover{
+  background-image: url("fajvo2.png");
+  background-size: auto;
+  
+} */
+.collageindex {
  
   display: flex;
   flex-wrap: nowrap;
+  color:black;
+}
+ 
+  
+    #welcometext{
+
+padding: 1em;
+    position: absolute;
+    left:5%;
+    top:5%;
+      }
+ #welcometext:hover{
+
+transform: rotate(2deg);
+font-size: .8em;
+
   }
-  #welcometext{
 
-transform: rotate(4deg);
-position: absolute;
-left:5%;
-top:5%;
+
+  @media (max-width: 600px) {
+    nav{
+     display: none;
+    }
+    body{
+      display:block;
+    }
+    main{
+  grid-column: 1/3;
+    }
+    .picture{
+      width:100%;
+    }
+    header{
+      display: none;
+    }
   }
-
-
