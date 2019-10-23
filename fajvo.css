@@ -1,7 +1,22 @@
 
 h1{
     font-family: lores-15-bold-alt-oakland, sans-serif;
+    color:black;
 }
+
+h1:hover{
+    
+    color:rebeccapurple;
+}
+
 
 p{font-family: lores-12, sans-serif;
 font-size:.8em}
+.p5Canvas {
+    position: absolute;
+    top: 0%;
+    z-index: -10;
+  }
+  img{
+      pointer-events: none;
+  }
