@@ -21,3 +21,7 @@ font-size:.8em}
   img{
       pointer-events: none;
   }
+nav ul li a{
+    font-family: lores-12, sans-serif;
+    color:black;
+}
