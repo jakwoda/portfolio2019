@@ -4,6 +4,9 @@
 
 html {
     scroll-behavior: smooth;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
   }
   body {
     margin: 0;
@@ -77,6 +80,7 @@ html {
     grid-column: 1 / 3;
     background: whitesmoke;
     padding: 5rem 1rem;
+    text-align: center;
   }
   h1 {
     color:rebeccapurple;
@@ -88,11 +92,13 @@ html {
 text-align: left;
   }
   h1:hover{
-    transition:ease-in-out 1s;
-     font-weight: 800;
+    transition:ease-out 0.5s;
+     font-weight: 600;
   }
 p{
   padding: .5em;
+  width:80%;
+  text-align: center;
 }
 .picture{
 
@@ -145,7 +151,7 @@ text-align: left;
     img#small.picture{
       width: 15em;
      }
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     nav{
      display: none;
     }
@@ -157,18 +163,13 @@ text-align: left;
     }
  
     .picture{
-      width:100%;
-    }
-  
-    nav{
-      display: none;
+      width:80%;
+      height:auto;
     }
   }
   .slick-slide{
     color:black;
-    text-align: center;
-  
-   
+    text-align: center; 
   }
 
 

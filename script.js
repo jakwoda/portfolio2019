@@ -35,7 +35,7 @@ window.addEventListener("scroll", event => {
 });
 
 
-$('.collageindex').slick({
+/* $('.collageindex').slick({
   centerMode: true,
   autoplay: true,
   autoplaySpeed: 10000,
@@ -61,7 +61,7 @@ $('.collageindex').slick({
       }
     }
   ]
-});
+}); */
 
 
 		
