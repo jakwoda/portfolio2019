@@ -107,6 +107,7 @@ width: 50%;
 height: auto;
 }
 .hidden{
+  opacity:100;
 transition: ease-in-out .5s;
 
 
@@ -117,6 +118,7 @@ transition: ease-in-out .5s;
 
 
 }
+
 /* .hidden:hover{
   background-image: url("fajvo2.png");
   background-size: auto;
@@ -124,12 +126,19 @@ transition: ease-in-out .5s;
 } */
 .collageindex {
  
-  display: flex;
-  flex-wrap: nowrap;
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(100px,300px));
   color:black;
 }
+.collageindex span {
  
-  
+  position: relative;
+top: -50%;
+left: -40%;
+z-index:-20 ;
+pointer-events: none;
+}
+
     #welcometext{
 
 padding: 1em;
@@ -153,7 +162,10 @@ text-align: left;
      }
   @media (max-width: 768px) {
     nav{
-     display: none;
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+      z-index: -10;
     }
     body{
       display:block;
