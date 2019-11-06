@@ -186,6 +186,12 @@ text-align: left;
       width:80%;
       height:auto;
     }
+    h1{
+      font-size: 1.8em;
+    }
+    p{
+      font-size: 1.3em;
+    }
   }
   .slick-slide{
     color:black;
