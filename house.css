@@ -1,15 +1,14 @@
 
 
  h1 {font-family: "Blimey-TRIAL-LightB";
-    font-size: 2em;
+    font-size: 3.6em;
     font-weight:200;
     color:red;
 }
 h1:hover{
     color:blue;
     font-weight:200;
-  
-}
+  }
 iframe{
     width:100%
 }
@@ -18,4 +17,10 @@ iframe{
     z-index: -10;
     top:0;
     right:0;
+}
+.picture{
+    position: relative;
+}
+.picture:hover{
+    position:sticky;
 }

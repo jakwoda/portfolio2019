@@ -18,10 +18,11 @@ font-size:.8em}
     top: 0%;
     z-index: -10;
   }
-  img{
-      pointer-events: none;
-  }
+  
 nav ul li a{
     font-family: lores-12, sans-serif;
     color:black;
+}
+.picture{
+    position: relative;
 }
